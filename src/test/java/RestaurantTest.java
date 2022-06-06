@@ -76,7 +76,7 @@ class RestaurantTest {
     }
 
     @Test
-    public void return_order_value_should_return_correct_total_price_when_customer_select_the_items_from_menu(){
+    public void return_order_value_should_return_correct_total_price_when_customer_select_the_items_from_menu() throws itemNotFoundException {
         // When some item is selected by customer, total cost returned should be correct(in this case i.e. "388"),
         restaurant.selectItemByName("Vegetable lasagne");
         restaurant.selectItemByName("Sweet corn soup");
